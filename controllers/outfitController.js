@@ -3,7 +3,7 @@ import ClothingItem from '../models/clothingItemModel.js';
 import Outfit from '../models/outfitModel.js';
 import axios from 'axios';
 
-const AI_SERVICE_URL = 'http://localhost:8000';
+const AI_SERVICE_URL = 'https://aiservice-production-e3ee.up.railway.app';
 
 const generateOutfit = asyncHandler(async (req, res) => {
   const userWardrobe = await ClothingItem.find({ user: req.user._id });

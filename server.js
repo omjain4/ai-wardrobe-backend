@@ -7,7 +7,6 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import authRoutes from './routes/authRoutes.js';
 import wardrobeRoutes from './routes/wardrobeRoutes.js';
 import outfitRoutes from './routes/outfitRoutes.js';
-import personalizeRoutes from './routes/personalizeRoutes.js'; // Import the new route
 
 dotenv.config();
 
@@ -33,11 +32,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/wardrobe', wardrobeRoutes);
 app.use('/api/outfits', outfitRoutes);
 // ... existing imports
-
-// ... app setup
-app.use('/api/personalize', personalizeRoutes);
-
-// ... rest of server code
 
 
 // Error Handling Middleware

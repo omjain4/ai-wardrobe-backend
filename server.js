@@ -16,7 +16,7 @@ const app = express();
 
 // CORS configuration to allow requests from your frontend
 const corsOptions = {
-  origin: ['http://localhost:5173', 'http://localhost:8080'], // 👈 Add your new port here
+  origin: ['http://localhost:5173', 'http://localhost:8080' , 'https://stylezap-wardrobe-ai.vercel.app' ], // 👈 Add your new port here
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
